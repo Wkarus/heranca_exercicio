@@ -18,14 +18,20 @@ this.espacoCarga = espacoCarga
 this.qntPessoas = qntPessoas
 this.setCor("preto")
 }
-
-
-
+}
+class Onibus extends Carro{
+    constructor(nome,portas,espacoCarga,qntPessoas){
+    super(nome,portas)
+    this.espacoCarga = espacoCarga
+    this.qntPessoas = qntPessoas
+    this.setCor("preto")
+    }
 }
 
 const Carro1= new Carro ("Van",4)
 
 const Carro2=new Minivan("acura",6)
+const Carro3=new Onibus("Mercedes-Benz",4)
 
 console.log(`Nome: ${Carro1.nome}`)
 console.log(`portas: ${Carro1.portas}`)
@@ -41,3 +47,12 @@ console.log(`vel: ${Carro2.vel}`)
 console.log(`espacoCarga: ${Carro2.espacoCarga}`)
 console.log(`qntPessoas: ${Carro2.qntPessoas}`)
 console.log(`cor: ${Carro2.cor}`)
+
+
+console.log(`Nome: ${Carro3.nome}`)
+console.log(`portas: ${Carro3.portas}`)
+console.log(`ligado: ${Carro3.ligado}`)
+console.log(`vel: ${Carro3.vel}`)
+console.log(`espacoCarga: ${Carro3.espacoCarga}`)
+console.log(`qntPessoas: ${Carro3.qntPessoas}`)
+console.log(`cor: ${Carro3.cor}`)
